@@ -1,0 +1,197 @@
+/* General Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header Navigation */
+header {
+  background: orangered;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  background: orange;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: whitesmoke;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  text-decoration: underline;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: gray;
+}
+
+/* Main Content Styles */
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.abc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full viewport height */
+}
+
+.abc a {
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: sans-serif;
+  transition: background-color 0.3s;
+}
+
+.abc a:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background: orangered;
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 3rem;
+
+}
+
+.pop a {
+  text-align: center;
+  background-color: rgb(129, 129, 227);
+  color: whitesmoke;
+}
+
+.put img {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+video.object-fill.w-full.rounded-lg {
+  display: block;
+  width: auto;
+  /* Full width on smaller screens */
+  height: 150px;
+  /* Maintain aspect ratio */
+  object-fit: fill;
+  border-radius: 7px;
+  transition: all 0.5s ease;
+  margin-top: 3rem;
+  /* Keep the existing transition */
+}
+
+/* Styles for medium screens (based on md\: classes) */
+@media (min-width: 768px) {
+
+  /* Example breakpoint for 'md' */
+  video.object-fill.w-full.rounded-lg {
+    /* Adjust styles for medium screens if needed */
+    /* For example, you might want to set a max-width or a specific height */
+  }
+}
+
+/* Styles for larger screens (based on tp\: classes or similar) */
+@media (min-width: 1024px) {
+
+  /* Example breakpoint for 'tp' */
+  video.object-fill.w-full.rounded-lg {
+    width: 100%;
+    /* Based on tp\:w-100pe */
+    /* Adjust other styles for larger screens if needed */
+  }
+}
